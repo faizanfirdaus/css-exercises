@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
 }
 
 img {
@@ -24,3 +28,45 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+a {
+  text-decoration: none;
+  color: inherit; /* This ensures the link color doesn't change */
+}
+
+ul {
+  list-style-type: none; /* Removes bullets from unordered lists */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.right-links, .left-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px; /* Adds space between child elements */
+}
+
+/* Style for the buttons container */
+.buttons {
+  display: flex;
+  gap: 16px; /* Adds space between buttons */
+}
+
+button {
+  padding: 10px
+}
+
